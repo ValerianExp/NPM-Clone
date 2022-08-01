@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root {
+    --form-label-color: rgba(0, 0, 0, .05);
+    --form-input-color: rgba(0, 0, 0, .05);
+    --form-button-background-color: #fb3e44;
+    --form-button-letters-color: white;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+header>div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.search-bar .searchBarForm {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar .searchBarForm input {
+    font-size: 25px;
+}
+
+.search-bar #search {
+    height: 50px;
+    width: 1400px;
+    background-image: url(images/magnifying-glass.png);
+    background-size: 45px;
+    background-repeat: no-repeat;
+    text-indent: 45px;
+    transition: all 0.2s;
+
+}
+
+.search-bar #search:focus {
+    background-position: -45px center;
+    text-indent: 0;
+}
+
+.searchBarForm button {
+    color: var(--form-button-letters-color);
+    background-color: var(--form-button-background-color);
+    width: 80px;
+    height: 58px;
+    font-size: 17px;
+}
+
+.search-bar .npmLogo {
+    width: 150px;
+    height: 50px;
+}
+
+.join-login a {
+    border: 1px solid rgb(161, 130, 130);
+}
+
+#join-link {
+    padding: 10px;
+
+}
+
+#login-link {
+    padding: 10px;
+    border-style: none;
+}
